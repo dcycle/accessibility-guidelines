@@ -13,15 +13,19 @@ Compliance with ADA standards
 
 It is proposed that all web properties use a continuous integration (CI) workflow to move code changes from a development, to a staging, to a production environment. Among the necessary steps, the user interface elements are passed through the open-source pa11y tool (pa11y.org) using Circle CI (circleci.com) combined with GitHub (github.com), which stops deployments automatically if changes introduce new issues with ADA compliance.
 
-<img src="accessbility-workflow.svg" alt="Workflow showing how changes are automatically tested for accessibility before being published to a public website" aria-describedby="accessibility-workflow-description" />
-<p id="accessibility-workflow-description">
-* First, a change request is made affecitng the user interface design (and thus potentially breaking accessibility)
-* Developers build code changing user interface design
-* Code is pushed to a dev branch on GitHub
-* CircleCI runs automated accessibility (pa11y) tests on new code
-  * If tests pass, the change is published to production
-  * If tests do not pass, then change goes back to development team for tweaking
-</p>
+<img preserveAspectRatio="none" src="accessbility-workflow.svg" alt="Workflow showing how changes are automatically tested for accessibility before being published to a public website" aria-describedby="accessibility-workflow-description" />
+<ul id="accessibility-workflow-description">
+  <li>First, a change request is made affecitng the user interface design (and thus potentially breaking accessibility)</li>
+  <li>Developers build code changing user interface design</li>
+  <li>Code is pushed to a dev branch on GitHub</li>
+  <li>CircleCI runs automated accessibility (pa11y) tests on new code</li>
+  <li>
+    <ul>
+      <li>If tests pass, the change is published to production</li>
+      <li>If tests do not pass, then change goes back to development team for tweaking</li>
+    </ul>
+  </li>
+</ul>
 
 Resources
 -----
