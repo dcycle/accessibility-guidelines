@@ -13,7 +13,7 @@ Compliance with ADA standards
 
 It is proposed that all web properties use a continuous integration (CI) workflow to move code changes from a development, to a staging, to a production environment. Among the necessary steps, the user interface elements are passed through the open-source pa11y tool (pa11y.org) using Circle CI (circleci.com) combined with GitHub (github.com), which stops deployments automatically if changes introduce new issues with ADA compliance.
 
-<img preserveAspectRatio="none" src="accessbility-workflow.svg" alt="Workflow showing how changes are automatically tested for accessibility before being published to a public website" aria-describedby="accessibility-workflow-description" />
+<img preserveAspectRatio="none" src="accessbility-workflow-v2.svg" alt="Workflow showing how changes are automatically tested for accessibility before being published to a public website" aria-describedby="accessibility-workflow-description" />
 <div id="accessibility-workflow-description">
 <p>Please find <a href="https://docs.google.com/drawings/d/1V-Q8U7A4_N42h7ADjjBKuOtIqrfJFJvcjYh8UctCieE/edit">this chart on Google Drawings</a></p>
 <ul>
